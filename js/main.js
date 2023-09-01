@@ -2,6 +2,7 @@ const badgeEl = document.querySelector('header .badges')
 const toTopEl=document.querySelector('#to-top')
 
 // 모니터에 보여지는 화면을 window라고 함,스크롤될 때 실행되는 갯수를 줄여주어 버벅이는 효과를 줄여준다
+//_.throttle(함수,시간)
 window.addEventListener('scroll', _.throttle(function () {
   console.log(window.scrollY)
   if (window.scrollY > 500) {
